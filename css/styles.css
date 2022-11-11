@@ -37,6 +37,18 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* ---------------------HEADER-------------------------------------- */
 header {
   padding-top: 24px;
@@ -606,6 +618,59 @@ header {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.mailing-wrapp {
+  margin-left: 93px;
+}
+
+.mailing-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: transparent;
+  padding: 15px 16px;
+}
+.mailing-input:focus {
+  color: #ffffff;
+}
+.mailing-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.mailing-form {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.mailing-btn {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  margin-left: 12px;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.btn-img-sand {
+  fill: #ffffff;
+  margin-left: 10px;
+}
+
 /* ----------------------------MODAL------------------------------------- */
 .backdrop {
   width: 100%;
@@ -642,6 +707,9 @@ header {
   justify-content: center;
 }
 .modal-close:hover {
+  fill: var(--hover-color);
+}
+.modal-close:focus {
   fill: var(--hover-color);
 }
 .is-hidden {
@@ -729,6 +797,7 @@ header {
   outline: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding: 12px 16px;
 }
 .modal-textarea:focus {
   border-color: var(--hover-color);
@@ -753,4 +822,33 @@ header {
   letter-spacing: 0.06em;
   color: #ffffff;
   border: transparent;
+}
+.modal-check {
+  display: flex;
+  align-items: center;
+}
+.check-input {
+}
+.check-label {
+  display: flex;
+  align-items: center;
+}
+.check-label span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 3px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.check-input:checked + .check-label span {
+  background-color: var(--hover-color);
+  fill: #fff;
+  border-color: transparent;
+}
+.check-input:focus + .check-label span {
+  border-color: var(--hover-color);
 }
