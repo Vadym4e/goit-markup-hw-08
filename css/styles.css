@@ -727,6 +727,7 @@ header {
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
+  margin-bottom: 12px;
 }
 .modal-form {
   display: block;
