@@ -1,4 +1,5 @@
 @import "./utils/vars";
+
 @import "./base/reset";
 @import "./components/container";
 @import "./utils/hidden";
@@ -12,4 +13,4 @@
 @import "./layouts/index/footer";
 @import "./layouts/portfolio/fitres";
 @import "./layouts/portfolio/projects";
-@import "./layouts/index/modal";
+@import "./components/modal";

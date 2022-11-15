@@ -8,29 +8,30 @@
 }
 .feature-list-item {
   width: 270px;
+  &::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &:nth-child(1)::before {
+    background-image: url(../imeges/uvaga-icon.svg);
+  }
+  &:nth-child(2)::before {
+    background-image: url(../imeges/punktualnist-icon.svg);
+  }
+  &:nth-child(3)::before {
+    background-image: url(../imeges/planuvannya-icon.svg);
+  }
+  &:nth-child(4)::before {
+    background-image: url(../imeges/tehnologii-icon.svg);
+  }
 }
-.feature-list-item::before {
-  content: "";
-  display: block;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.feature-list-item:nth-child(1)::before {
-  background-image: url(../imeges/uvaga-icon.svg);
-}
-.feature-list-item:nth-child(2)::before {
-  background-image: url(../imeges/punktualnist-icon.svg);
-}
-.feature-list-item:nth-child(3)::before {
-  background-image: url(../imeges/planuvannya-icon.svg);
-}
-.feature-list-item:nth-child(4)::before {
-  background-image: url(../imeges/tehnologii-icon.svg);
-}
+
 .feature-title {
   font-weight: 700;
   font-size: 14px;
