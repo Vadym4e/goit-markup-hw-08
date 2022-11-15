@@ -1,0 +1,48 @@
+.feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.feature-list {
+  display: flex;
+  gap: 30px;
+}
+.feature-list-item {
+  width: 270px;
+}
+.feature-list-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature-list-item:nth-child(1)::before {
+  background-image: url(../imeges/uvaga-icon.svg);
+}
+.feature-list-item:nth-child(2)::before {
+  background-image: url(../imeges/punktualnist-icon.svg);
+}
+.feature-list-item:nth-child(3)::before {
+  background-image: url(../imeges/planuvannya-icon.svg);
+}
+.feature-list-item:nth-child(4)::before {
+  background-image: url(../imeges/tehnologii-icon.svg);
+}
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.feature-paragraph {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-text-color);
+  margin-top: 10px;
+}
