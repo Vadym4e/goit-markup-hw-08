@@ -4,6 +4,14 @@
   --paragraph-text-color: #757575;
 }
 
+.logo--color-black {
+  color: #212121;
+}
+
+.logo--color-white {
+  color: #ffffff;
+}
+
 p,
 h1,
 h2,
@@ -80,7 +88,6 @@ header {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #212121;
   margin-right: 93px;
 }
 .logo > .logo__web {
@@ -527,7 +534,6 @@ header {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #ffffff;
 }
 
 .footer-logo-web {
