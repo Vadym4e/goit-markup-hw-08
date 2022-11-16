@@ -1,12 +1,12 @@
-.feature {
+.cards {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.feature-list {
+.cards__list {
   display: flex;
   gap: 30px;
 }
-.feature-list-item {
+.cards__item {
   width: 270px;
   &::before {
     content: "";
@@ -32,7 +32,7 @@
   }
 }
 
-.feature-title {
+.cards__name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -40,7 +40,7 @@
   text-transform: uppercase;
   color: var(--title-text-color);
 }
-.feature-paragraph {
+.cards__description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
