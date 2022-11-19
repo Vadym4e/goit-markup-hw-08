@@ -104,18 +104,16 @@ header {
 }
 
 .menu__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
   text-decoration: none;
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu__link .connection-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.menu__link:hover, .menu__link:focus {
-  color: var(--hover-color);
 }
 
 .menu__link.current {
@@ -140,6 +138,13 @@ header {
 }
 
 .connection__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
   text-decoration: none;
   color: #757575;
   display: flex;
