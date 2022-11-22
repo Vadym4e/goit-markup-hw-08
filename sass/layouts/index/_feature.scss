@@ -1,13 +1,19 @@
 .cards {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .cards__list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .cards__item {
-  width: 270px;
+  // width: 270px;
+  width: 100%;
   &::before {
     content: "";
     display: block;
@@ -30,15 +36,25 @@
   &:nth-child(4)::before {
     background-image: url(../imeges/tehnologii-icon.svg);
   }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .cards__name {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .cards__description {
   font-size: 14px;
