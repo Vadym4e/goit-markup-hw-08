@@ -1,6 +1,8 @@
 header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  // padding-top: 24px;
+  // padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 }
 .header__container {
@@ -15,12 +17,18 @@ header {
   font-style: normal;
   text-decoration: none;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  // font-size: 26px;
+  // line-height: 1.19;
+  font-size: 24px;
+  line-height: calc(28px / 24px);
   letter-spacing: 0.03em;
   margin-right: 93px;
   & > .logo__web {
     color: #2196f3;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
@@ -28,7 +36,8 @@ header {
   list-style: none;
 }
 .menu {
-  display: flex;
+  // display: flex;
+  display: none;
   gap: 50px;
 }
 
@@ -59,7 +68,8 @@ header {
 }
 
 .connection {
-  display: flex;
+  // display: flex;
+  display: none;
   margin-left: auto;
   gap: 50px;
   align-items: center;
@@ -96,4 +106,17 @@ header {
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+}
+.menu-open {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+  margin-left: auto;
+  // position: absolute;
+  // top: 10px;
+  // right: 15px;
+  align-items: center;
+  justify-content: center;
 }

@@ -87,8 +87,8 @@ body {
 }
 
 header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -106,13 +106,19 @@ header {
   font-style: normal;
   text-decoration: none;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   margin-right: 93px;
 }
 .logo > .logo__web {
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .list {
@@ -120,7 +126,7 @@ header {
 }
 
 .menu {
-  display: flex;
+  display: none;
   gap: 50px;
 }
 
@@ -152,7 +158,7 @@ header {
 }
 
 .connection {
-  display: flex;
+  display: none;
   margin-left: auto;
   gap: 50px;
   align-items: center;
@@ -189,6 +195,17 @@ header {
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+}
+
+.menu-open {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero {
