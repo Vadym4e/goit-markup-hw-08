@@ -708,7 +708,11 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 94px;
+}
+@media screen and (min-width: 1200px) {
+  .customers-list {
+    margin-bottom: 94px;
+  }
 }
 
 .customers-item {
@@ -772,7 +776,7 @@ header {
 }
 
 .social-wrapper {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .social-wrapper {
@@ -837,8 +841,12 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 12px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer-social-title {
+    padding-top: 12px;
+  }
 }
 
 .address-connection:hover,
@@ -977,8 +985,13 @@ header {
 .filtres {
   margin-bottom: 50px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .filtres {
+    justify-content: center;
+  }
 }
 
 .filtres-button {
@@ -1014,10 +1027,12 @@ header {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
 .projects-list-item {
+  width: 100%;
   background-color: #fff;
   border: 1px solid #eeeeee;
   max-width: 370px;

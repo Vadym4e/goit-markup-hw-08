@@ -24,7 +24,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 94px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
+  }
 }
 .customers-item {
   // width: 170px;

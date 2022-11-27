@@ -16,7 +16,7 @@
   }
 }
 .social-wrapper {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   @media screen and (min-width: 768px) {
     width: 50%;
   }
@@ -72,8 +72,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 12px;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    padding-top: 12px;
+  }
 }
 .address-connection:hover,
 .address-connection:focus {
